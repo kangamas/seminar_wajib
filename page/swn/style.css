@@ -1,0 +1,68 @@
+body {
+    font: 13px arial;
+}
+#wrapper {
+    width: 550px;
+    padding: 10px;
+}
+#result {
+    padding: 7px 10px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+#result.ok {
+    background-color: #96F5AB;
+    color: #1C671C;
+}
+#result.error {
+    background-color: #F5BEBE;
+    color: #AA3030
+}
+table {
+    border: solid 1px #333;
+    border-collapse: collapse; 
+    width: 100%;
+}
+table th, table td {
+    border: solid 1px #333;
+}
+table th {
+    background-color: #f7f7f7;
+    padding: 5px;
+}
+table td {
+    padding: 3px 5px;
+}
+table td a {
+    display: inline-block;
+    padding: 2px 5px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 10px;
+}
+table tr.aktif {
+    background-color: #F6FF9E !important;
+}
+table td a:hover {
+    opacity: 0.5;
+}
+table td a.ubah {
+    background-color: green;
+}
+table td a.hapus {
+    background-color: red;
+}
+form p {
+    margin: 0;
+    padding: 3px 0;
+}
+form label {
+    float: left;
+    width: 100px;
+}
+#loader {
+    margin-left: 10px;
+    font-style: italic;
+    font-size: smaller;
+    color: gray;
+}

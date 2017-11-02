@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Ajax CRUD | blog.didinsino.com</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div id="wrapper">
+    
+        
+        
+        <div id="form-area">
+            <h3>Input Data Mahasiswa</h3>
+            <form id="form-input" method="post" action="action.php?a=input">
+            <p>
+                <label for="nim">NIM</label>
+                <input type="text" name="nim" id="nim" size="10" maxlength="10" autofocus>
+            </p>
+            <p>
+                <label for="nama">Nama</label>
+                <input type="text" name="nama" id="nama" size="40" maxlength="50">
+            </p><p>
+                <label for="jk">Jenis Kelamin</label>
+                <select name="jk" id="jk">
+                    <option></option>
+                    <option value="L">Laki-Laki</option>
+                    <option value="P">Perempuan</option>
+                </select>
+            </p><p>
+                <label for="nim">Alamat</label>
+                <input type="text" name="alamat" id="alamat"/>
+            </p>
+            <p>
+                <label>&nbsp;</label>
+                <button type="submit" name="simpan">Tambahkan Data</button>
+                <button type="reset">Batal</button>
+                <span id="loader" style="display:none"><img src="loader.gif"> Mengirim...</span>
+            </p>
+            </form>
+        </div>
+        <!-- untuk menampillkan pesan dari server -->
+        <div id="result" style="display:none"></div>
+        
+        <table id="tabel-data">
+            <thead>
+                <tr>
+                    <th width="30px">NO</th><th>NIM</th><th>NAMA</th>
+                    <th width="30px">L/P</th><th>ALAMAT</th><th width="80px"></th>
+                </tr>
+            </thead>
+            <!-- area untuk menampilkan data. data akan di-load via ajax -->
+            <tbody id="data-area"></tbody>
+        </table>
+        
+    </div>
+    <script type="text/javascript" src="jquery-1.11.1.min.js"></script>		
+    <script type="text/javascript" src="myscript.js"></script>	
+</body>
+</html>
